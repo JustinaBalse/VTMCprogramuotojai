@@ -46,3 +46,30 @@ body{
 .img-small{
     width: 5%;
 }
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 516px) { 
+    .masthead .masthead-heading{
+        font-size: 1.5rem;
+    }
+    
+    
+    .divider-custom .divider-custom-line{
+        display: none;
+    }
+
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 321px) { 
+    .masthead .masthead-heading{
+        font-size: 1.1rem;
+    }
+    
+    .divider-custom .divider-custom-line{
+        display: none;
+    }
+
+}
+
