@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/e6dd49c3b4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Play Scrabble!</title>
+</head>
+
+<body>
+    <main>
+
+        <div class="left" id="left">
+            <div class="letter-holder" id="letter-holder"></div>
+            <div class="buttons">
+                <div class="button" id="shuffle-btn"><i class="fas fa-dice icon"></i><br>Shuffle</div>
+                <div class="button" id="submit-btn"><i class="fas fa-paper-plane icon"></i><br>Submit</div>
+                <div class="button new-game-button" id="new-game-btn"><i class="fas fa-book-reader icon"></i><br>New game</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="timer"><time>00:00:00</time></div>
+            <div class="score-board" id="total-score">SCORE: <br> 0</div>
+            <img src="../IMG/cloud.svg" alt="cloud" class="cloud" id="game-rules-cloud">
+            <div id="game-rules-to-hide" class="game-rules">
+                <ol>
+                    <li>Press <span class="bold">Shuffle</span> button to generate 7 letters.</li>
+                    <li>Select the letter, then click to tile on board, where you would like to put it. <ul class="important-notes">
+                            <li>Please select only 1 letter at a time.</li>
+                            <li>If you are using the letter already on board, you need to click on it.</li>
+                        </ul>
+                    </li>
+                    <li>Once you are finished adding the letters, click the <span class="bold">Submit</span> button.</li>
+                    <li>Continue using the letters you have, if you need new ones, just click the <span class="bold">Shuffle</span> button.</li>
+                    <li><span class="bold">Have fun!</span></li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../JS/main.js"></script>
+</body>
+
+
+</html>

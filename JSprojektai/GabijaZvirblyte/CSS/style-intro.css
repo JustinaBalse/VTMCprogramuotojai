@@ -1,0 +1,156 @@
+body {
+    background-color: #faebd7;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.intro {
+    position: absolute;
+    width: 1000px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.letter {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 3px 0px rgba(214, 179, 129, 1);
+    text-shadow: #e0e0e0 1px 1px 0, 1px 1px 2px rgba(52, 23, 14, 0.3);
+    color: #292823;
+    background-image: url(../IMG/wood-letter.png);
+    font-family: 'Roboto', sans-serif;
+    font-size: 85px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+
+.s {
+    animation: flip 0.12s cubic-bezier(.11, .93, .4, .99) 8;
+}
+
+.c {
+    animation: flip 0.12s cubic-bezier(.11, .93, .4, .99) 12;
+}
+
+.r {
+    animation: flip 0.12s cubic-bezier(.11, .93, .4, .99) 16;
+}
+
+.a {
+    animation: flip 0.12s cubic-bezier(.11, .93, .4, .99) 20;
+}
+
+.b1 {
+    animation: flip 0.12s cubic-bezier(.11, .93, .4, .99) 24;
+}
+
+.b2 {
+    animation: flip 0.12s cubic-bezier(.11, .93, .4, .99) 28;
+}
+
+.l {
+    animation: flip 0.12s cubic-bezier(.11, .93, .4, .99) 32;
+}
+
+.e {
+    animation: flip 0.12s cubic-bezier(.11, .93, .4, .99) 36;
+}
+
+button {
+    background-color: #cc464c;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 1px 0px 10px #471c17;
+    outline: none;
+    margin-top: 5%;
+}
+
+button:hover {
+    background-color: #8f2935;
+    transform: scale(1.5);
+}
+
+
+/******************
+    ANIMATION
+******************/
+
+@keyframes flip {
+
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(180deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+/*********************
+    MEDIA QUERIES
+*********************/
+
+@media (min-width: 768px) and (max-width: 1280px) {
+
+    .letter {
+        width: 80px;
+        height: 80px;
+        font-size: 65px;
+    }
+
+    button {
+        display: block;
+        margin: 40px auto;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .intro {
+
+        width: 400px;
+        height: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .letter {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        margin: 3px;
+    }
+
+    button {
+        font-size: 30px;
+        padding: 20px 3px;
+        display: block;
+        margin: 30px auto;
+    }
+
+    button:hover {
+        background-color: #8f2935;
+        transform: scale(1.3);
+    }
+
+}

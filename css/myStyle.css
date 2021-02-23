@@ -34,3 +34,15 @@ body{
 .btn-outline-dark:hover {
     background-color: #1abc9c;
 }
+
+.card{
+    border: .125rem solid #2c3e50;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.img-small{
+    width: 5%;
+}

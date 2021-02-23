@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Quiz logotipas ir moto -->
+        <header class="text-center">
+            <img src="IMG/Index/quiz.png" alt="quiz" style="width: 20%">
+            <h3 class="text-uppercase">Jei neatsakysi - sužinosi!</h3>
+        </header>
+
+        <main>
+
+            <section id="start-page" class="text-center">
+
+                <!-- Zaidimo taisykles -->
+                <ul class="list-group list-group-flush col-lg-8 col-md-12 col-sm-12 col-12 mx-auto my-4 text-center">
+                    <li class="list-group-item">
+                        <h4 class="text-uppercase">Taisyklės</h4>
+                    </li>
+                    <li class="list-group-item">Žaidimą sudaro 10 klausimų</li>
+                    <li class="list-group-item">Klausimas turi tik 1 teisingą atsakymą</li>
+                    <li class="list-group-item">
+                        <p class="mb-0">Žaidėjui pasirinkus atsakymo variantą parodoma, kuris atsakymas yra teisingas, ir po 5 sekundžių pereinama prie kito klausimo</p>
+                        <a href="#" class="badge skyblue text-white">Pavyzdys</a>
+                        <div class="d-none mt-3" id="question-example">
+                            <p class="text-size mb-3">Klausimas</p>
+                            <div class="col-lg-6 col-md-6 col-sm-8 col-12 mx-auto">
+                                <button class="btn btn-block green text-white mb-2" type="button">Teisingas atsakymas</button>
+                                <button class="btn btn-block red text-white mb-2" type="button">Neteisingas atsakymas</button>
+                                <button class="btn btn-block blue text-white mb-2" type="button">Trečias atsakymas</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Zaidimo temu pasirinkimas -->
+                <h4 class="text-uppercase mb-4">Temos</h4>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 ml-auto">
+                        <div class="card">
+                            <img src="IMG/Index/question-mark.jpg" class="card-img-top" alt="question" style="width: 100%">
+                            <div class="card-body">
+                                <h5 class="card-title">Įvairūs klausimai</h5>
+                                <button type="button" class="btn btn-block skyblue text-white mt-4 mb-2" id="various-questions">Pradėti žaidimą</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 mr-auto">
+                        <div class="card">
+                            <img src="IMG/Index/vilnius.jpg" class="card-img-top rounded" alt="city" style="width: 100%">
+                            <div class="card-body">
+                                <h5 class="card-title">Koks tai Lietuvos miestas?</h5>
+                                <button type="button" class="btn btn-block skyblue text-white mt-4 mb-2" id="cities-questions">Pradėti žaidimą</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Zaidimo eigos (klausimu ir atsakymu pateikimo) sritis -->
+            <section id="questions" class="d-none text-center mt-4">
+                <img src="" id="city-image" class="rounded" style="width: 60%">
+                <p id="question" class="text-size mb-4"></p>
+                <div class="col-lg-4 col-md-8 col-sm-8 col-8 mx-auto">
+                    <button class="btn btn-block blue text-white text-size mb-2" type="button" id="answerA"></button>
+                    <button class="btn btn-block blue text-white text-size mb-2" type="button" id="answerB"></button>
+                    <button class="btn btn-block blue text-white text-size mb-2" type="button" id="answerC"></button>
+                </div>
+                <p id="question-number" class="text-right"></p>
+            </section>
+
+            <!-- Zaidimo pabaigos (suskaiciuotu teisingu zaidejo atsakymu ir atitinkamos foto) sritis -->
+            <section id="counted-answers" class="d-none text-center mt-4">
+                <img src="" alt="grade" id="right-answers-image" class="rounded mx-auto d-block mb-4" style="width: 60%">
+                <p id="right-answers-count" class="text-size"></p>
+                <button type="button" class="btn skyblue text-white mt-2" id="another-game">Žaisti dar kartą</button>
+            </section>
+
+        </main>
+
+        <!-- Copyright poraste -->
+        <footer class="my-4">
+            <p class="text-center">Copyright &copy; 2019, Loreta Vėbraitė</p>
+        </footer>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- JSON ir JS failai -->
+    <script src="JS/variousQ.json"></script>
+    <script src="JS/citiesQ.json"></script>
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>

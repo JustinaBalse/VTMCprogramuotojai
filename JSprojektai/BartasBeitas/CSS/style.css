@@ -1,0 +1,141 @@
+/*                                  ----- BENDRI -----                                                  */
+
+/* Headerio lygiavimas bei stilizacija */
+
+header{
+    margin-top: 50px;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Amita', cursive;
+    font-size: 42px;
+}
+
+/* Nav dalies lygiavimas bei stilizacija */
+
+nav{
+    display: inline-block;
+}
+
+.nav{
+    display: inline-block;
+}
+
+.nav-item{
+    display: inline-block;
+}
+
+.nav-link{
+    padding: 5px 10px;
+    font-size: 3vh;
+    font-family: 'Amita', cursive;
+}
+
+/* Mygtuku stilizacija */
+
+button{
+    border: 2px solid transparent;
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 30px;
+    font-family: 'Amita', cursive;
+}
+
+/* Nuorodu stilizacija */
+
+a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+    color: darkorange;
+    text-decoration: none;
+}
+
+/* Footerio stilizacija */
+
+footer{
+    clear: both;
+    font-size: 24px;
+    font-family: 'Amita', cursive;
+}
+
+/*                                ----- PRADZIA -----                                                 */
+
+/* Autores nuotraukos apipavidalinimas */
+
+.autore{
+    float: left;
+    height: 30vh;
+    width: auto;
+    border: 1px solid black;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+/*                                ----- GALERIJA -----                                                 */
+
+/* Sarasas filtru */
+
+ul{
+    text-align: center;
+}
+
+li{
+    display: inline;
+    list-style: none;
+    padding: 10px;
+    font-size: 22px;
+}
+
+/* Mygtuku stilizacija */
+
+button{
+    margin: 0 auto;
+}
+
+#searchInput{
+    border: 1px solid gainsboro;
+}
+
+#centruok{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Filtravimo mygtuku bei paieskos lygiavimas */
+
+#div1{
+    float: left;
+    text-align: end;
+}
+
+#div2{
+    float: left;
+    text-align: end;
+}
+
+/* Galerijos paveiksliuku stilizacija */
+
+.card-columns{
+}
+
+.card{
+   border: 5px solid black; 
+}
+
+.invis{
+    display: none;
+}
+
+h5{
+    font-family: 'Amita', cursive;
+}
+
+

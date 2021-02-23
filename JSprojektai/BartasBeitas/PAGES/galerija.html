@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paveikslu Galerija</title>
+    <link href="https://fonts.googleapis.com/css?family=Amita&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+<!--       Bendroji header ir nav dalis. Nieko ypatingo.-->
+        <header>
+            <h1>Teresės Beitienės kūryba.</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Pradžia</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Galerija <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <hr>
+            <div>
+<!--               Forma skirta filtravimui + paieskos laukelis.-->
+                <form action="#" id="formFilter">
+                    <ul>
+                        <li><label for="i1">Tikrovė&nbsp;</label><input type="checkbox" name="Tikrovė" value="Tikrovė" id="i1"></li>
+                        <li><label for="i2">Peizažas&nbsp;</label><input type="checkbox" name="Peizažas" value="Peizažas" id="i2"></li>
+                        <li><label for="i3">Raganos&nbsp;</label><input type="checkbox" name="Raganos" value="Raganos" id="i3"></li>
+                        <li><label for="i4">Kūmutės&nbsp;</label><input type="checkbox" name="Kumutės" value="Kumutės" id="i4"></li>
+                        <li><label for="i5">Karyba&nbsp;</label><input type="checkbox" name="Karyba" value="Karyba" id="i5"></li>
+                        <li><label for="i6">Panteonas&nbsp;</label><input type="checkbox" name="Panteonas" value="Panteonas" id="i6"></li>
+                        <li><label for="i7">Memuarai&nbsp;</label><input type="checkbox" name="Memuarai" value="Memuarai" id="i7"></li>
+                        <li><label for="i8">Monotipijos&nbsp;</label><input type="checkbox" name="Monotipijos" value="Monotipijos" id="i8"></li>
+                    </ul>
+<!--                    Minetas paieskos laukelis.-->
+                    <div class="row" id="centruok">
+                        <div class="col-7" id="div1"><button class="btn-small" type="submit" id="filtras">Filtruoti</button>
+                            <button class="btn-small" type="button" id="resetas">Atstatyti</button></div>
+                        <div class="col-5" id="div2"><input type="text" placeholder="Įveskite pavadinimą" id="searchInput">
+                            <button type="button" id="initSearch">Ieškoti</button></div>
+                    </div>
+                </form>
+            </div>
+            <hr>
+<!--            Pradzioje tuscias div, i kuri JavaScript sukels korteles.-->
+<!--           Klase card-columns automatiskai pritako korteles skirtingo dydzio ekranams.-->
+            <div class="card-columns">
+
+            </div>
+        </main>
+<!--        Footeris bei naudojamos bibliotekos. Nieko reiksmingo.-->
+        <footer>
+            <hr>
+            <div class="text-center">
+                <p>Kūrinių autorė - Teresė Beitienė</p>
+                <p>Svetainę sukūrė - Bartas Tadas Beitas</p>
+                <p>2019-2020 m.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script type="text/javascript" src="../JS/vaizdai.json"></script>
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>

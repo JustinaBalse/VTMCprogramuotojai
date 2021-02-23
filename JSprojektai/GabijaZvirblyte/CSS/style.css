@@ -1,0 +1,441 @@
+/******************
+    GENERAL
+******************/
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #faebd7;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.right {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+}
+
+/*******************
+        BOARD
+*******************/
+
+table {
+    background-color: #c6bea7;
+    background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 5px 4px rgba(136, 136, 136, 0.8);
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    border: 5px solid white;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 4px 4px #888888;
+}
+
+.tile-colors {
+    background-color: #FABCAD;
+}
+
+.brain-icon::before {
+    font-family: FontAwesome;
+    content: "\f5dc";
+    font-size: 35px;
+}
+
+.timer,
+.score-board {
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #cc464c;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.timer,
+.score-board {
+    font-size: 35px;
+}
+
+.timer {
+    width: 180px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+}
+
+.score-board {
+    width: 180px;
+    height: 110px;
+    margin: 10px auto;
+    padding: 10px 0;
+}
+
+.bold,
+.important-notes li {
+    font-weight: bold;
+}
+
+li {
+    line-height: 30px;
+}
+
+.game-rules {
+    box-shadow: 0px 0px 5px 4px rgba(136, 136, 136, 0.8);
+    border-radius: 5px;
+    padding: 20px 20px 20px 40px;
+    background-color: #E0D3AF;
+    background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    display: none;
+}
+
+ol {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.cloud {
+    height: 80px;
+    width: 120px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.25));
+}
+
+.cloud:hover {
+    right: 25px;
+    bottom: 25px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/*****************
+    LETTERS
+*****************/
+
+.letter-holder {
+    width: 400px;
+    height: 60px;
+    margin: 20px auto;
+    background-color: #E0D3AF;
+    background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+    box-shadow: 0px 0px 5px 4px rgba(136, 136, 136, 0.8);
+    border-radius: 5px;
+    position: relative;
+}
+
+.letters {
+    padding: 0;
+    text-align: center;
+}
+
+.letter {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px 0px rgba(214, 179, 129, 1);
+    text-shadow: #e0e0e0 1px 1px 0, 1px 1px 2px rgba(52, 23, 14, 0.3);
+    color: #292823;
+    background-image: url(../IMG/wood-letter.png);
+    font-size: 35px;
+    padding-top: 5px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.letter:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: scale(1.2);
+}
+
+sub {
+    font-size: 11px;
+}
+
+/*****************
+    BUTTONS
+*****************/
+
+.buttons {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #cc464c;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+.new-game-button {
+    background-color: #2a573b;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.icon {
+    font-size: 40px;
+    padding: 10px 30px;
+}
+
+.button:active {
+    position: relative;
+    bottom: 5px;
+}
+
+.button:hover {
+    background-color: #822f33;
+}
+
+.new-game-button:hover {
+    background-color: #1E3C29;
+}
+
+/**************************
+    LETTERS ON BOARD STYLES
+**************************/
+
+.selected {
+    box-shadow: none;
+    transform: scale(1.2);
+    border: 2px ridge #EC6C5B;
+}
+
+.selected:hover {
+    box-shadow: none;
+}
+
+.letter-on-board {
+    text-shadow: #e0e0e0 1px 1px 0, 1px 1px 2px rgba(52, 23, 14, 0.3);
+    color: #292823;
+    background-image: url(../IMG/wood-letter.png);
+    background-size: cover;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/*********************
+    MEDIA QUERIES
+*********************/
+
+@media (min-width: 768px) and (max-width: 1280px) {
+
+    table {
+        width: 450px;
+        height: 450px;
+    }
+
+    td {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brain-icon::before {
+        font-size: 25px;
+    }
+
+    .letter-holder {
+        width: 280px;
+        height: 40px;
+        margin: 15px auto 10px auto;
+    }
+
+    .letter {
+        width: 30px;
+        height: 30px;
+        margin: 4px;
+        font-size: 25px;
+        padding: 0;
+        box-shadow: 0px 3px 3px 0px rgba(214, 179, 129, 1);
+    }
+
+    .letter-on-board {
+        font-size: 25px;
+    }
+
+    sub {
+        font-size: 8px;
+    }
+
+    .selected {
+        border: 1px ridge #EC6C5B;
+    }
+
+    .icon {
+        font-size: 30px;
+        padding: 5px 20px;
+    }
+
+    .button {
+        font-size: 10px;
+        margin: 0 10px;
+    }
+
+    .timer,
+    .score-board {
+        font-size: 30px;
+    }
+
+    .timer {
+        width: 200px;
+        height: 70px;
+        line-height: 65px;
+    }
+
+    .score-board {
+        width: 200px;
+        height: 110px;
+        margin: 10px auto;
+    }
+
+    .game-rules {
+        width: 70%;
+        height: 70%;
+    }
+
+    ol {
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+    }
+
+    li {
+        line-height: 25px;
+        font-size: 14px;
+    }
+
+    ol {
+        padding-right: 10px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    table {
+        width: 300px;
+        height: 300px;
+    }
+
+    td {
+        width: 26px;
+        height: 26px;
+        border: 3px solid white;
+    }
+
+    .brain-icon::before {
+        font-size: 15px;
+    }
+
+    .letter-holder {
+        width: 280px;
+        height: 40px;
+        margin: 15px auto;
+    }
+
+    .letter {
+        width: 30px;
+        height: 30px;
+        margin: 4px;
+        font-size: 25px;
+        padding: 0;
+        box-shadow: 0px 3px 3px 0px rgba(214, 179, 129, 1);
+    }
+
+    .letter-on-board {
+        font-size: 16px;
+    }
+
+    sub {
+        font-size: 8px;
+    }
+
+    .selected {
+        border: 1px ridge #EC6C5B;
+    }
+
+    .icon {
+        font-size: 22px;
+        padding: 6px 20px;
+    }
+
+    .button {
+        font-size: 8px;
+        margin: 0 10px;
+    }
+
+    .new-game-button {
+        position: static;
+    }
+
+    .timer,
+    .score-board {
+        font-size: 16px;
+    }
+
+    .timer {
+        width: 130px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .score-board {
+        width: 130px;
+        height: 60px;
+        margin: 10px auto;
+    }
+
+    .game-rules {
+        width: 90%;
+        height: 70%;
+    }
+
+    li {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    ol {
+        width: 90%;
+        height: 200px;
+        margin-left: 10px;
+        padding: 0;
+    }
+
+    .cloud {
+        height: 40px;
+        width: 60px;
+    }
+}

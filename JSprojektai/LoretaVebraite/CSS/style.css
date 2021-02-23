@@ -1,0 +1,78 @@
+/* BENDRIEJI
+   ========================================================================== */
+
+/**
+ * 1. Puslapio sriftas.
+ * 2. Teksto spalva.
+ */
+
+.container {
+    font-family: 'Exo', sans-serif;
+    color: #2d4159;
+}
+
+/* SECTION
+   ========================================================================== */
+
+/**
+ * Saraso grupes pirmam elementui uzdedamas virsutinis remelis.
+ */
+
+.list-group-flush:first-child .list-group-item:first-child {
+    border-top-color: rgba(0, 0, 0, 0.125);
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+/**
+ * Nuimamas pabraukimas uzvedus pele ant nuorodos.
+ */
+
+a:hover {
+    text-decoration: none;
+}
+
+/**
+ * Mygtuku spalvos.
+ */
+
+.red {
+    background-color: #b30000;
+}
+
+.green {
+    background-color: #1f7a1f;
+}
+
+.blue {
+    background-color: #004d66;
+}
+
+.skyblue {
+    background-color: #509fbd;
+}
+
+/**
+ * Ilgo teksto sutalpinimas mygtuke, kad graziai "sukristu" ir viska parodytu.
+ */
+
+.btn {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+/**
+ * Neaktyvaus mygtuko skaidrumas.
+ */
+
+.btn:disabled {
+    opacity: 1;
+}
+
+/**
+ * Teksto dydis.
+ */
+
+.text-size {
+    font-size: 1.1rem;
+}
