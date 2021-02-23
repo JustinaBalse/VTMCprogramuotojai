@@ -1,0 +1,22 @@
+Programuotojai dieną ir naktį sėdi prilipę prie kompiuterio
+
+Diena paprastai prasideda kiekvienam programuotojui nustatant dienos užduotis ir prioritetus. Tuomet – susitikimų metas. Šiuolaikinius ir sudėtingus projektus kuria ne pavieniai programuotojai, o komandos, todėl svarbu sukoordinuoti darbus ir jų būseną. Susitikimai paprastai vyksta pirmoje dienos pusėje. Svarią dalį dienos užima tyrimai: idėjų paieška, užduoties vizualizavimas ir nagrinėjimas ieškant tinkamiausio kodo, abstrakcijų, bibliotekų ir technologijų.
+
+
+Programuotojai - nemokantys bendrauti viengungiai
+
+Kai kurie įsivaizduoja programuotojus kaip keistuolius, kurie valandų valandas sėdi prie kompiuterio ir su niekuo nebendrauja. Vis dėlto, šiuolaikiniai programuotojai neretai yra komandos nariai ir dirba kartu su kolegomis. Be to, juk daugelio žmonių darbas šiais laikais yra prie kompiuterio, todėl programuotojai ne taip ir skiriasi nuo jų. Net ir dirbdami savarankiškai programuotojai neretai stengiasi palaikyti ryšius su kitais programuotojais, kad galėtų dalintis patirtimi ir atradimais.
+
+Programuotojai turi būti puikūs matematikai
+
+Kažkodėl sklando mitai, kad kiekvienas programuotojas yra matematikos ekspertas. Iš tiesų, visai nebūtina turėti talentą matematikai, kad taptum programuotoju. Daugelis matematinių veiksmų ir sudėtingų algoritmų yra išsprendžiami pasitelkiant tam skirtus įrankius.
+
+Net pradedantys programuotojai uždirba tūkstančiais, milijonais ir tonom
+
+Programuotojų trūksta, tai šiek tiek iškreipia rinką. Patyrusių programuotojų atlyginimai galbūt šiek tiek didesni nei kitų profesijų atstovų.
+Realybėje, programeriai be patirties neuždirba daug. Geresni atlyginimai prasideda tik dirbant turtingose įmonėse ir turint vertingos patirties savo srityje.
+Pirmas programuotojo "atlyginimas", dažnai būna galimybė mokytis iš labiau patyrusių kolegų. Darbas prie tikrų užduočių labai paspartina mokymosi procesą.
+
+Programuotoju gali dirbti bet kas
+
+Susipažinti su IT ir pabandyti save šioje srityje gali bet kas, bet būti geru programuotoju geba toli gražu ne visi. IT sritis – labai dinamiška, todėl tie, kurie tikisi, kad vos po kelių mėnesių pradės programuoti, dažnai nusivilia. Mokytis reikia kasdien. Ir kuo daugiau mokaisi, domiesi papildomai, kuo labiau tuo dega tavo akys, tuo labiau tikėtina, kad IT prisijaukinti pavyks
